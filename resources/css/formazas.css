@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+main {
+
+    width: 100%;
+    max-width: 900px;
+}
+
+header {
+
+    text-align: center;
+}
+
+#ingatlanok {
+
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingatlanElem {
+
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tehermentes {
+
+    color: aquamarine;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #ingatlanok {
+
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .ingatlanElem {
+    
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -3,6 +3,11 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ingatlanokController;
+use App\Http\Controllers\kategoriakController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+Route::get('/ingatlanok', [ingatlanokController::class, 'index']);
+Route::get('/kategoriak', [kategoriakController::class, 'index']);
